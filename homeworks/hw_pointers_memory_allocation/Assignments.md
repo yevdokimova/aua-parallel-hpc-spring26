@@ -1,4 +1,4 @@
-# Pointers and Memory Allocation
+# Homework 1: Pointers and Memory Allocation
 
 Push your source code to GitHub and submit a report with an analysis of each program. The report should include explanations of the code, how it works, and screenshots of the output.
 
