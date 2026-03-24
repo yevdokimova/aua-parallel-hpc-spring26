@@ -9,3 +9,10 @@ homeworks/**/*
 !homeworks/**/*.txt
 !homeworks/**/*.png
 !homeworks/**/Makefile
+
+workbench/**/*
+
+!workbench/**/
+!workbench/**/*.c
+!workbench/**/*.h
+!workbench/**/*.md
