@@ -7,4 +7,5 @@ homeworks/**/*
 !homeworks/**/*.h
 !homeworks/**/*.md
 !homeworks/**/*.txt
+!homeworks/**/*.png
 !homeworks/**/Makefile
