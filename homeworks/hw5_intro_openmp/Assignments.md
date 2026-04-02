@@ -1,4 +1,4 @@
-# Homework 4: Intro to OpenMP
+# Homework 5: Intro to OpenMP
 
 Submit a report containing a simple explanation, output screenshots, and a github link.
 
@@ -29,7 +29,7 @@ Inside a parallel region with **4 threads**:
 
 ## Assignment 2: Delivery Priority Update
 
-**Objective: mplement a program for 10000 delivery orders.**
+**Objective: Implement a program for 10000 delivery orders.**
 
 _Task_:
 
