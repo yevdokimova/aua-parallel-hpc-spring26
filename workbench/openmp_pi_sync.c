@@ -7,7 +7,7 @@ static long num_steps = 1000000000;
 int main() {
 
     double start_time, run_time;
-    double pi;
+    double pi = 0.0;
     double step = 1.0 / (double)num_steps;
     
     omp_set_num_threads(NUM_THREADS);  //requesting given number of threads, may receive <= to NUM_THREADS
