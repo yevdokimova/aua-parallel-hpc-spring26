@@ -32,7 +32,8 @@ int main() {
 
     #pragma omp parallel num_threads(N_THREADS)
     {
-        int id = omp_get_thread_num(); 
+        int id = omp_get_thread_num();
+        int nthreads = omp_get_num_threads();
 
         // Step 1. Initialize logs
         #pragma omp single nowait
@@ -63,7 +64,7 @@ int main() {
         // Step 3. Produce final result
         #pragma omp single
         {   
-            for (int i = 0; i < N_THREADS; i++) {
+            for (int i = 0; i < nthreads; i++) {
                 log_count_results[FAST] += log_count[i][FAST];
                 log_count_results[MEDIUM] += log_count[i][MEDIUM];
                 log_count_results[SLOW] += log_count[i][SLOW];
