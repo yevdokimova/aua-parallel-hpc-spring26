@@ -41,7 +41,8 @@ int main() {
                 logs[i].user_id = i;
                 logs[i].response_time_ms = (double)rand() / RAND_MAX * 500.0;
             }
-        #pragma omp barrier //using barrier since it was requested by requirement, otherwise single with nowait has implicit barrier at the end
+        //using barrier since it was requested by assignment requirements, otherwise single with nowait has implicit barrier at the end
+        #pragma omp barrier 
 
         // Step 2. Process logs in parallel with for
         #pragma omp for
