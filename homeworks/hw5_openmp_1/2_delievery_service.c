@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <time.h>
 
 #define N_THREADS 4
 #define N_DELIVERY 10000
@@ -33,7 +34,7 @@ int main() {
     {   
         
         int id = omp_get_thread_num();
-        unsigned int seed = id + 1;
+        unsigned int seed = id + time(NULL);
         int nthreads = omp_get_num_threads();
 
         // Step 1. initialize threshold

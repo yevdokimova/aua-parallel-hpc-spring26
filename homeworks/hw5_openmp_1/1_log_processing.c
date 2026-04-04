@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <time.h>
 
 #define N_THREADS 4
 #define N_LOGS 20000
@@ -22,6 +23,7 @@ typedef enum {
 
 int main() {
 
+    srand(time(NULL));
     Log* logs = (Log* )malloc(N_LOGS * sizeof(Log));
     if(logs == NULL) {
         perror("malloc");
