@@ -1,7 +1,5 @@
 # Homework 5: Report
 
-**Platform:** Apple M4 Max, 16 threads, no virtual multithreading
-
 ## Task 1: Parallel Log Processing
 
 Used `#pragma omp single nowait` to initialize all logs on one thread, followed by an explicit `#pragma omp barrier` to ensure all threads wait until initialization is complete. Using `single` without `nowait` would achieve the same thing due to its implicit barrier, but the assignment required both single and barrier separately.
